@@ -15,7 +15,83 @@
     --text-color: #fff;
     --main-color: #0ef;
 }
+#black-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column; /* Display children in column */
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    font-size: 24px; /* Adjust font size as needed */
+}
 
+.spinner {
+    width: 3em;
+    height: 3em;
+    cursor: not-allowed;
+    border-radius: 50%;
+    border: 2px solid #736C77;
+    box-shadow: 
+        -10px -10px 10px #0ef,
+        0 -10px 10px #E9E90F,
+        10px -10px 10px #0ef,
+        10px 10px 10px #E9E90F,
+        0 10px 10px #0ef,
+        -10px 10px 10px #E9E90F;
+    animation: rot55 0.7s linear infinite;
+    margin-bottom: 1em; /* Adjust margin bottom */
+}
+
+.spinner-in {
+    border: 2px solid #444;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes rot55 {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    position: relative;
+    font-size: 4em;
+    letter-spacing: 15px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+    line-height: 0.7em;
+    outline: none;
+    animation: animate 5s linear infinite;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e1ee68, 0 0 40px #e7f52b, 0 0 50px #e1ff35, 0 0 60px #c4e240, 0 0 70px #daf104;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #158dc5, 0 0 50px #089ac7, 0 0 60px #055879, 0 0 70px #02398b, 0 0 80px #046299;
+    }
+}
+body {
+    cursor: url('cursor.png'), auto;
+}
 html {
     font-size: 60%;
     overflow-x: hidden;
