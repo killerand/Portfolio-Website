@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding for the document -->
     <meta charset="UTF-8">
+    <!-- Responsive design settings for various screen sizes -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage displayed in the browser tab -->
     <title>Asiya's Portfolio</title>
+    <!-- Link to the external stylesheet for custom styles -->
     <link rel="stylesheet" href="style.css">
+    <!-- Link to the Boxicons library for icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <!-- Section for the loading screen with animated text -->
      <div id="black-screen">
         <span class="loading-text-words">L</span>
         <span class="loading-text-words">O</span>
@@ -21,10 +27,14 @@
         // Change the title of the document
         document.title = "Asiya Bint's Portfolio";
     </script>
-    
+
+    <!-- Header section containing the navigation menu -->
     <header class="header">
+        <!-- Logo linking to the home section -->
         <a href="#home" class="logo">Asiya <span>Bint</span></a>
+        <!-- Menu icon for mobile navigation -->
         <i class='bx bx-menu' id="menu-icon"></i>
+        <!-- Navigation bar with links to different sections -->
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
@@ -34,6 +44,7 @@
         </nav>
     </header>
     
+    <!-- Home section with an introduction -->
     <section class="home" id="home">
         <div class="home-content">
             <h1>Hello, it's <span>Asiya</span></h1>
@@ -42,7 +53,7 @@
             <p>Certainly:
 
                 "Ideas differentiate dreams, passion imbues them with color, and hard work brings them to fruition."_a.s</p>
-          
+                <!-- Social media icons -->
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/your_profile"><i class='bx bxl-linkedin'></i></a>
                     <a href="https://www.instagram.com/your_profile"><i class='bx bxl-instagram-alt'></i></a>
@@ -50,18 +61,21 @@
                     <a href="https://github.com/killerand"><i class='bx bxl-github'></i></a>
                     
                 </div>
-                
+            
+            <!-- Buttons for hiring and contacting -->  
             <div class="btn-group">
                 <a href="https://line.me/ti/p/ZvJH_ijj65" class="btn">Hire</a>
                 <a href="#contact-section" class="btn">Contact</a>
             </div>
         </div>
-    
+
+        <!-- Image in the home section -->
         <div class="home-img">
             <img src="Ibrahim.png" alt="">
         </div>
     </section>
-
+    
+<!-- About section with details about skills, language, education, and certificates -->
     <section class="about" id="about">
         <h2 class="heading">About</h2>
     
@@ -116,10 +130,10 @@
     </section>
     
 
-
+    <!-- Experience section with a timeline of work experience -->
     <section class="experience" id="experience">
         <h2 class="heading">Experience</h2>
-    
+    <!-- Individual timeline items -->
         <div class="timeline-items">
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
@@ -154,7 +168,7 @@
                 <div class="timeline-date">2021</div>
                 <div class="timeline-content">
                     <h3>Administrative/Customer Service support</h3>
-                    <p>Provided administrative and clerical support.Worked as a Customer Service Representative/Data Entry Specialist, providing exceptional customer service, accurately inputting and updating customer information, and resolving issues.</p>
+                    <p>Provided administrative and clerical support. Worked as a Customer Service Representative/Data Entry Specialist, providing exceptional customer service, accurately inputting and updating customer information, and resolving issues.</p>
                 </div>
             </div>
 
@@ -208,11 +222,13 @@
             </div>
         </div>
     </section>
-
+    
+   <!-- Work section highlighting various projects and experiences -->
     <section class="work" id="work">
         <div class="work-box">
             <h2 class="heading">Work</h2>
             <div class="wrapper">
+                <!-- Individual work items -->
                 <div class="work-item">
                     <img src="2.png" alt="">
                     <h2>Instagram</h2>
@@ -257,12 +273,14 @@
         </div>
     </section>
     
+    <!-- Contact section with a form to send messages -->
     <section class="contact" id="contact-section">
         <h2 class="heading">Contact<span>Me</span></h2>
         
             <form action="https://formspree.io/f/mpzvkggr" method="POST">
                 <div class="input-group">
                     <div class="input-box">
+                        <!-- Input fields for user details -->
                         <input type="text" name="Full Name" placeholder="Full Name" required>
                         <input type="email" id="email" name="Email" placeholder="Email" required>
                         <input type="tel" name="Phone Number" placeholder="Phone Number">
@@ -271,56 +289,49 @@
                 </div>
         
                 <div class="input-group-2">
+                    <!-- Textarea for the user's message -->
                     <textarea name="message" id="message" cols="50" rows="13" placeholder="Your Message"></textarea>
+                    <!-- Submit button -->
                     <input type="submit" value="Send Message" class="btn">
                 </div>
             </form>
     </section>
     
-
+    <!-- Footer section with social media links and navigation -->
     <footer class="footer">
+        <!-- Social media icons in the footer -->
         <div class="social">
+            <!-- Absolute URL linking to LinkedIn -->
             <a href="https://www.linkedin.com/in/your_profile"><i class='bx bxl-linkedin'></i></a>
+            <!-- Absolute URL linking to Instagram -->
             <a href="https://www.instagram.com/your_profile"><i class='bx bxl-instagram-alt'></i></a>
+            <!-- Absolute URL linking to Facebook -->
             <a href="https://www.facebook.com/profile.php?id=100081182711004"><i class='bx bxl-facebook'></i></a>
+            <!-- Absolute URL linking to GitHub -->
             <a href="https://github.com/killerand"><i class='bx bxl-github'></i></a>
         </div>
-
-        <ul class="list">
-            <li>
-                <a href="#">FAQ</a>
-            </li>
-
-            <li>
-                <a href="#">Home</a>
-            </li>
-
-            <li>
-                <a href="#">About</a>
-            </li>
-
-            <li>
-                <a href="#">Experience</a>
-            </li>
-
-            <li>
-                <a href="#">Work</a>
-            </li>
-
-            <li>
-                <a href="#">Contact</a>
-            </li>
-            
+<!-- Navigation links in the footer -->
+      <ul class="list">
+            <!-- Relative URL linking to FAQ page -->
+            <li><a href="#">FAQ</a></li>
+            <!-- Relative URL linking to Home page -->
+            <li><a href="#">Home</a></li>
+            <!-- Relative URL linking to About page -->
+            <li><a href="#">About</a></li>
+            <!-- Relative URL linking to Experience page -->
+            <li><a href="#">Experience</a></li>
+            <!-- Relative URL linking to Work page -->
+            <li><a href="#">Work</a></li>
+            <!-- Relative URL linking to Contact page -->
+            <li><a href="#">Contact</a></li>
         </ul>
+        <!-- Footer copyright -->
         <p class="copyright">
             &copy; Asiya Bint | All Right Reserved </p>
 
     </footer>
-
     
-   
-   
-   
+<!-- Link to the external JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
